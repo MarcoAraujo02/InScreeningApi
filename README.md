@@ -37,7 +37,7 @@ Ao rodar o projeto ira cair nesta tela. Se atente aos Remarks e siga eles para t
 ![image](https://github.com/user-attachments/assets/b0e74465-3c54-45c3-9fd6-5636a73dca60)
 
 <br><br>
-## Fique atente nos metodos Post
+## Fique atento nos metodos Post
 Em metodos Post **fique atento** aos Sample request, há campos que são enums para não aceitar outros tipo de informações assim como sexo no cadastro de paciente e na adição de uma nova triagem.
 ![image](https://github.com/user-attachments/assets/b8d2feab-3597-40f4-a499-70e325291399)
 
