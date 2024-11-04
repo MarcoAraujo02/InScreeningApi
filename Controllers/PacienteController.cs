@@ -25,7 +25,7 @@ namespace InScreeningApi.Controllers
         /// <response code="404"> Pacientes não encontrados</response>
         /// 
         
-        [HttpGet("pacientes")]
+        [HttpGet]
         public async Task<ActionResult<IEnumerable<Paciente>>> GetPacientes()
         {
             return Ok(await PacienteRepository.GetPacientes());
@@ -97,7 +97,7 @@ namespace InScreeningApi.Controllers
         /// <response code="500"> Erro ao salvar o paciente</response>
         /// <response code="400"> Dados inválidos</response>
         
-        [HttpPost("pacientes")]
+        [HttpPost]
         public async Task<ActionResult<Paciente>> AddPaciente([FromBody] Paciente paciente)
         {
             try

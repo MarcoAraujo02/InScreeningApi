@@ -14,7 +14,7 @@ builder.Services.AddDbContext<dbContext>(options =>
     options.UseOracle(builder.Configuration.GetConnectionString("OracleConnection"))
 );
 
-
+builder.Services.AddScoped<IExameRepository, ExameRepository>();
 builder.Services.AddScoped<IFuncionarioRepository, FuncionarioRepository>();
 builder.Services.AddScoped<IPacienteRepository, PacienteRepository>();
 builder.Services.AddScoped<ITriagemRepository, TriagemRepository>();
@@ -28,14 +28,21 @@ builder.Services.AddSwaggerGen(options =>
     {
         Version = "v1",
         Title = "Gerenciador de Triagens",
-        Description = "API para cadastro de funcionario, paciente e triagem!",
+        Description = "API para cadastro de funcionario, paciente e triagem! \nos Exames são feitos por uma IA e aqui você pode checa-los",
 
     });
     var xmlFilename = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
     options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, xmlFilename));
 }
     );
+
+builder.Services.AddHttpClient<IExameRepository, ExameRepository>(client =>
+{
+    client.BaseAddress = new Uri("https://127.0.0.1:5000");
+});
+
 var app = builder.Build();
+
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
