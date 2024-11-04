@@ -72,6 +72,25 @@ E quando testarmos ira retornar igual no swagger. (Caso a sua API de python este
  ![image](https://github.com/user-attachments/assets/5750a964-cf56-4048-873c-3ba897c0fcc0)
 
 
+## Pratica Clean code e SOLID
+
+Clean Code e SOLID
+Este projeto aplica práticas de Clean Code e os princípios SOLID para manter o código limpo, modular e fácil de manter.
+
+Clean Code: Utilizamos nomes significativos, funções pequenas e código autoexplicativo. Removemos código morto e mantemos uma formatação consistente.
+SOLID:
+<br>
+--SRP (Single Responsibility): Cada classe possui uma única responsabilidade.
+<br>
+--OCP (Open/Closed): Classes estão abertas para extensão, mas fechadas para modificação.
+<br>
+--LSP (Liskov Substitution): Classes derivadas podem substituir a base sem alterar o comportamento.
+<br>
+--ISP (Interface Segregation): Interfaces pequenas e específicas evitam implementações desnecessárias.
+<br>
+--DIP (Dependency Inversion): Dependências são injetadas, facilitando testes e modularidade.
+<br>
+Essas práticas aumentam a clareza do código e reduzem o acoplamento, tornando o sistema mais robusto e fácil de evoluir.
 
 
 
