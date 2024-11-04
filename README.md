@@ -9,7 +9,6 @@ Bem-vindo ao InScreening! 🚀
 - **Marco Antonio** - **RM550128**
 - **Vinícius Andrade** - **RM99343**
 - **Leonardo Bruno** - **RM552408**
-- **Renan Vieira** - **RM551813**
 <br><br>
 
 ## Por que a Escolha da API de Microservices?
